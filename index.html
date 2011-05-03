@@ -1,0 +1,198 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="LÖVE-PARTY">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/grid.css?v=2">
+
+ 
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container container_16">
+        <div id="wrapper" class="grid_14 push_1">
+            <div id="clouds">&nbsp;</div>
+            <header>
+                <h1>LÖVE distribution helper</h1>
+                <nav>
+                    <ul>
+                        <li><a href="http://love2d.org/forums">Forums</a></li>
+                        <li><a href="http://love2d.org/wiki">Wiki</a></li>
+                        <li><a href="http://love2d.org/">LÖVE</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <span class="clear">&nbsp;</span>
+            
+            <div id="main" class="grid_14">
+                <section id="form" class="grid_12 push_1">
+                    <form method="post" enctype="multipart/form-data">
+                        <section id="game" class="step">
+                            <h2>Step 1: Your game</h2>
+                            <p>Upload your <a href="#">properly packaged</a> .love file here.</p>
+                            <input type="file" name="game" size="40">
+                        
+                            <h3>LÖVE version</h3>
+                            <p>This game was written for LÖVE version: </p>
+                            <select name="versions" class="version">
+                                <option value="auto" selected="selected">Detect automatically</option>
+                                <option value="0.7.2">0.7.2</option>
+                                <option value="0.7.1">0.7.1</option>
+                                <option value="0.7.0">0.7.0</option>
+                            </select>
+                        
+                            <h3>Game icon</h3>
+                            <em>Optional. If you do not upload an icon, the <a href="#">generic LÖVE icon</a> will be used where necessary.</em>
+                            <ol id="icons">
+                                <li class="listitem-icon">
+                                    <span class="iconupload">
+                                        <input type="file" name="game" size="40">
+                                    </span>
+                                    <span class="iconsize">
+                                        <select name="iconsize" class="iconsizes">
+                                            <option value="22">22x22px</option>
+                                            <option value="24">24x24px</option>
+                                            <option value="32" selected="selected">32x32px</option>
+                                            <option value="48">48x48px</option>
+                                            <option value="64">64x64px</option>
+                                            <option value="128">128x128px</option>
+                                            <option value="256">256x256px</option>
+                                        </select>
+                                    </span>
+                                    <span class="icondelete">
+                                        <a href="#" id="icondelete"><img src="images/delete.png" /></a>
+                                    </span>
+                                </li>
+                            </ol>
+                            <a href="#" id="iconadd">Add another icon</a>
+                        </section>
+                        <section id="platforms" class="step">
+                            <h2>Step 2: Platform support</h2>
+                            <p class="error">A wild error message appears!</p>
+                            <p>Decide what platforms you want binaries for.</p>
+                            <table style="margin: 0px;">
+                                <thead>
+                                    <tr>
+                                        <th class="grid_3">Windows</th>
+                                        <th class="grid_3">OS X</th>
+                                        <th class="grid_3">Linux</th>
+                                        <th class="grid_3">Other</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="win32" id="win32"> <label for="win32">32-bit</label></td>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="osx" id="osx"> <label for="osx">Universal binary</label></td>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="lin32" id="lin32"> <label for="lin32">32-bit</label></td>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="caanoo" id="caanoo"> <label for="caanoo">Caanoo</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="grid_3"></td>
+                                        <td class="grid_3"></td>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="64" id="lin64"> <label for="lin64">64-bit</label></td>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="dingoo" id="dingoo"> <label for="dingoo">Dingoo</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="grid_3"></td>
+                                        <td class="grid_3"></td>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="ubuntu" id="ubuntu"> <label for="ubuntu">Ubuntu package</label></td>
+                                        <td class="grid_3"><input type="checkbox" name="platform" value="nanonote" id="nanonote"> <label for="nanonote">Nanonote</label></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        
+                        <section id="security" class="step">
+                            <h2>Step 3: Security</h2>
+                            <p>Do you want your binaries built using the regular <a href="#">LÖVE binaries</a> or the more security conscious <a href="#">SELÖVE</a>?</p>
+                            <small><a href="#">More information →</a></small>
+                            
+                            <ul>
+                                <li class="grid_3"><input type="checkbox" name="love-binary" value="vanilla" id="vanilla"> <label for="vanilla">Vanilla LÖVE</label></li>
+                                <li class="grid_3"><input type="checkbox" name="love-binary" value="selove" id="selove"> <label for="selove">SELÖVE</label></li>
+                            </ul>
+                        </section>
+                        
+                        <section id="archive" class="step">
+                            <h2>Step 4: Archive format</h2>
+                            <p>What kind of archive would you prefer for your download?</p>
+                            
+                            <ul>
+                                <li class="grid_3"><input type="radio" name="archive" value="tar" id="tar" checked> <label for="tar">Tar.gz</label></li>
+                                <li class="grid_3"><input type="radio" name="archive" value="zip" id="zip"> <label for="zip">Zip</label></li>
+                            </ul>
+                        </section>
+                        
+                        <section id="build" class="step grid_4 prefix_8">
+                            <h2>Ready to build!</h2>
+                            <a href="#" class="btn cancel">Cancel</a>
+                            <a href="#" class="btn build">Build</a>
+                        </section>
+                    </form>
+                </section>
+            </div>
+            
+            <footer>
+                <small>Icons courtesy of <a href="http://www.fatcow.com/free-icons" rel="noref">FatCow Hosting</a></small>
+            </footer>
+        </div>
+    </div> <!--! end of #container -->
+
+
+    <!-- Javascript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  
+  
+    <!--[if lt IE 7 ]>
+        <script src="js/libs/dd_belatedpng.js"></script>
+        <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+    <![endif]-->
+
+
+    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID 
+    <script>
+        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+        (function(d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.async = true;
+            g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s);
+        })(document, 'script');
+    </script> -->
+  
+</body>
+</html>

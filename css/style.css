@@ -413,7 +413,82 @@ span.icondelete img:hover {
     font-weight: bold;
 }
 
+section#login {
+    margin: 2em 0;
+}
 
+form#login {
+    margin: 1em 0 0.5em 0;
+}
+
+form#login label {
+    margin-bottom: 0.25em;
+    display: block;
+    font-weight: bold;
+    color: #476880;
+    font-size: 14px;
+}
+
+form#login label[for=remember] {
+    display: inline;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+form#login input {
+    margin-bottom: 1em;
+}
+
+form#login input[type=email], form#login input[type=password] {
+    height: 2em;
+    width: 100%;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #666;
+    padding: 3px 0 3px 3px;
+    box-shadow: none;
+}
+
+form#login input:required {
+    background: #ffffff;
+    border: 1px solid #666;
+}
+
+form#login input[type=checkbox] {
+    margin-bottom: 0em;
+}
+
+form#login input[type=submit] {
+    margin-top: 1em;
+    padding: 1em 2em;
+    font-weight: bold;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #cacaca;
+    background: #F9F9F9; /* Old browsers */
+    background: -moz-linear-gradient(top, #F9F9F9 0%, #EAEAEA 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(100%,#EAEAEA)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F9F9F9 0%,#EAEAEA 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F9F9F9 0%,#EAEAEA 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #F9F9F9 0%,#EAEAEA 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#EAEAEA',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #F9F9F9 0%,#EAEAEA 100%); /* W3C */
+}
+form#login input[type=submit]:hover {
+    background: #EAEAEA; /* Old browsers */
+    background: -moz-linear-gradient(top, #EAEAEA 0%, #F9F9F9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EAEAEA), color-stop(100%,#F9F9F9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #EAEAEA 0%,#F9F9F9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #EAEAEA 0%,#F9F9F9 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #EAEAEA 0%,#F9F9F9 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EAEAEA', endColorstr='#F9F9F9',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #EAEAEA 0%,#F9F9F9 100%); /* W3C */
+    border: 1px solid #bababa;
+}
+
+form#login div a {
+    float:right;
+}
 
 /* ------ buttons
 -----------------------------------------------*/

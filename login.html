@@ -1,0 +1,112 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Sign in to LÖVE Load</title>
+    <meta name="description" content="">
+    <meta name="author" content="LÖVE-PARTY">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/grid.css?v=2">
+
+ 
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container container_16">
+        <div id="wrapper" class="grid_14 push_1">
+            <div id="clouds">&nbsp;</div>
+            <header>
+                <h1>LÖVE Load</h1>
+                <nav>
+                    <ul>
+                        <li><a href="http://love2d.org/forums">Forums</a></li>
+                        <li><a href="http://love2d.org/wiki">Wiki</a></li>
+                        <li><a href="http://love2d.org/">LÖVE</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <span class="clear">&nbsp;</span>
+            
+            <div id="main" class="grid_14">
+                <section id="login" class="grid_10 push_2">
+                    <h2>LÖVE Load Administrator</h2>
+                    <p>Please sign in to upload new games, as well as manage previously uploaded games.</p>
+                    
+                    <form id="login" class="grid_6 alpha">
+                        <label for="email">E-mail address</label>
+                        <input type="email" name="email" placeholder="email@example.com" required autocomplete="on"><br>
+                        
+                        <label for="password">Password</label>
+                        <input type="password" name="password" required><br>
+                        
+                        <div class="grid_6 suffix_4 alpha">
+                            <input type="checkbox" name="remember"> <label for="remember">Remember me</label>
+                            <a href="#" id="register">No account? Register here.</a>
+                        </div>
+                        
+                        <input type="submit" name="submit" value="Sign in">
+                    </form>
+                </section>
+            </div>
+            
+            <footer>
+                <small>Icons courtesy of <a href="http://www.fatcow.com/free-icons" rel="noref">FatCow Hosting</a></small>
+            </footer>
+        </div>
+    </div> <!--! end of #container -->
+
+
+    <!-- Javascript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  
+  
+    <!--[if lt IE 7 ]>
+        <script src="js/libs/dd_belatedpng.js"></script>
+        <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+    <![endif]-->
+
+
+    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID 
+    <script>
+        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+        (function(d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.async = true;
+            g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s);
+        })(document, 'script');
+    </script> -->
+  
+</body>
+</html>

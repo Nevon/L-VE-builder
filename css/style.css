@@ -439,7 +439,7 @@ form#login input {
     margin-bottom: 1em;
 }
 
-form#login input[type=email], form#login input[type=password] {
+form#login input[type=input], form#login input[type=password] {
     height: 2em;
     width: 100%;
     -moz-border-radius: 3px;

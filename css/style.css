@@ -497,6 +497,12 @@ form#login div a {
     float:right;
 }
 
+img#gameicon {
+    width: 48px;
+    height: 48px;
+    min-height: 48px;
+}
+
 section#game {
     margin: 3em 0;
 }
@@ -530,7 +536,10 @@ div#sharing ul {
 }
 
 figure#screenshots {
-    margin-top: 2em;
+    margin: 2em 0;
+    width: 460px;
+    height: 345px;
+    min-height: 345px;
 }
 
 div#screenoverlay {

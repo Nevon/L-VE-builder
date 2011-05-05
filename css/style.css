@@ -542,6 +542,11 @@ figure#screenshots {
     min-height: 345px;
 }
 
+figure#screenshots img {
+    max-height: 345px;
+    max-width: 460px;
+}
+
 div#screenoverlay {
     position: relative;
     top: -32px;

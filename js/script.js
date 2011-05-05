@@ -48,3 +48,11 @@ $('#iconadd').click(function() {
 $('#icondelete').live('click', function() {
 	$(this).parent().parent().remove();
 });
+
+/*Hide the downloads list by default*/
+$('#downloadslist').hide();
+
+/*Toggling the visibility of the downloads list*/
+$('#downloadslistlink').click(function() {
+	$('#downloadslist').toggle('slow');
+});

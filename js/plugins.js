@@ -16,7 +16,7 @@
 
 //Buttons
 $(function(){ 
-	$('.btn').append($('<span />').addClass('helper'));
+	$('.iconbtn').append($('<span />').addClass('helper'));
 });
 
 

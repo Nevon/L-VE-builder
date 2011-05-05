@@ -1,0 +1,174 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Warlocks and Bi-winning</title>
+    <meta name="description" content="">
+    <meta name="author" content="LÖVE-PARTY">
+
+    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/grid.css?v=2">
+
+ 
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container container_16">
+        <div id="wrapper" class="grid_14 push_1">
+            <div id="clouds">&nbsp;</div>
+            <header>
+                <h1>LÖVELoad</h1>
+                <nav>
+                    <ul>
+                        <li><a href="http://love2d.org/forums">Forums</a></li>
+                        <li><a href="http://love2d.org/wiki">Wiki</a></li>
+                        <li><a href="http://love2d.org/">LÖVE</a></li>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="main" class="grid_14">
+                <section id="game" class="grid_12 push_1 alpha">
+                    <div class="grid_1 alpha">
+                        <img src="http://sheenholders.com/48x48" alt="Warlocks and Bi-winning icon">
+                    </div>
+                    <div id="headline" class="grid_8">
+                        <h1>Warlocks and Bi-winning</h1>
+                        <p>Short-ish game blurb goes here</p>
+                    </div>
+                    <div id="sharing" class="grid_3 omega">
+                        <p>Share this</p>
+                        <ul>
+                            <li><a href="#"><img src="images/twitter.png" alt="Share on Twitter"></a></li>
+                            <li><a href="#"><img src="images/reddit.png" alt="Share on Reddit"></a></li>
+                            <li><a href="#"><img src="images/facebook.png" alt="Share on Facebook"></a></li>
+                        </ul>
+                    </div>
+                    
+                    <figure id="screenshots" class="grid_8 alpha">
+                        <img src="http://sheenholders.com/460x345" alt="Warlocks and Bi-winning screenshot">
+                        <div id="screenoverlay" class="grid_8 alpha omega">
+                            <a href="#" id="prev">previous</a>
+                            <a href="#" id="next">next</a>
+                        </div>
+                    </figure>
+                    
+                    <div id="downloads" class="grid_4 omega">
+                        <a href="#" class="btn green grid_4 omega alpha">Download for LÖVE 0.7.2</a>
+                        <a href="#" class="btn grid_4 omega alpha">Download for OS X</a>
+                        <a href="#" id="downloadslistlink">Other downloads</a>
+                        <ul id="downloadslist">
+                            <li><a href="#"><span class="os">Windows</span> <span class="architecture">32-bit</span></a></li>
+                            <li><a href="#"><span class="os">OS X</span></a></li>
+                            <li><a href="#"><span class="os">Linux</span> <span class="architecture">32-bit</span></a></li>
+                            <li><a href="#"><span class="os">Linux</span> <span class="architecture">64-bit</span></a></li>
+                            <li><a href="#"><span class="os">Caanoo</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <section id="gameinfo" class="grid_12 alpha omega">
+                        <article id="description" class="grid_8 alpha">
+                            <h2>Description</h2>
+                            <p>Warlocks and Bi-winning is the new, hilarious adventure gem from the creators of Runaway. A great adventure game in high definition, loaded with laughs, tributes, mysteries and wacky puzzles!</p>
+                            <p>Thanks to a production worthy of a great animated movie, an awesome soundtrack, delightful dialogue and a great art style, Warlocks and Bi-winning will make you live an unforgettable adventure which brilliantly takes players across the fantastic movie genres of a totally crazy Hollywood.</p>
+                        </article>
+                        
+                        <section id="gamedetails" class="grid_4 omega">
+                            <h3>Details</h3>
+                            <dl>
+                                <dt>Genre</dt><dd>Action-Adventure</dd>
+                                <dt>Release date</dt><dd>2011-05-04</dd>
+                                <dt>Game modes</dt>
+                                <dd id="gamemodes">
+                                    <ul>
+                                        <li>Single player</li>
+                                        <li>Local 2-player co-op</li>
+                                        <li>Online multiplayer</li>
+                                    </ul>
+                                </dd>
+                                <dt>Created by</dt>
+                                <ul>
+                                    <li>
+                                        <figure class="creator">
+                                            <a href="#">
+                                                <img src="http://sheenholders.com/32x32" alt="Bartbes avatar">
+                                                <figcaption>Bartbes</figcaption>
+                                            </a>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure class="creator">
+                                            <a href="#">
+                                                <img src="http://sheenholders.com/32x32" alt="Nevon avatar">
+                                                <figcaption>Nevon</figcaption>
+                                            </a>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </dl>
+                        </section>
+                    </section>
+                    
+                </section>
+            </div>
+            
+            <footer>
+                <small>Icons courtesy of <a href="http://www.fatcow.com/free-icons" rel="noref">FatCow Hosting</a></small>
+            </footer>
+        </div>
+    </div> <!--! end of #container -->
+
+
+    <!-- Javascript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+  
+  
+    <!--[if lt IE 7 ]>
+        <script src="js/libs/dd_belatedpng.js"></script>
+        <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+    <![endif]-->
+
+
+    <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID 
+    <script>
+        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+        (function(d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.async = true;
+            g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s);
+        })(document, 'script');
+    </script> -->
+  
+</body>
+</html>

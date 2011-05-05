@@ -589,47 +589,51 @@ a#downloadslistlink {
     margin-bottom: 1.25em;
 }
 
-ul#downloadslist {
+div#downloadslist {
     border-top: 1px solid #cadceb;
     border-bottom: 1px solid #f2f9ff;
-    padding: 0;
     margin-top: 1em;
+    margin-left: 1.8em;
 }
 
-ul#downloadslist li {
+div#downloadslist ul {
+    border-top: 1px solid #f2f9ff;
+    border-bottom: 1px solid #cadceb;
+    padding: 0;
+    margin: 0;
+}
+
+div#downloadslist ul li {
     list-style-type: none;
     width: 100%;
     margin-bottom: .25em;
 }
 
-ul#downloadslist li:hover {
+div#downloadslist ul li:hover {
     background-color: #deebf7;
 }
 
-ul#downloadslist li a {
+div#downloadslist ul li a {
     color: #797584;
     display: block;
 }
 
-ul#downloadslist li a span.architecture {
+div#downloadslist ul li a span.architecture {
     float: right;
     margin-right: 2.5em;
 }
 
-ul#downloadslist li a span.os {
+div#downloadslist ul li a span.os {
     margin-left: 2.5em;
     font-weight: bold;
 }
 
-ul#downloadslist li:first-child {
-    border-top: 1px solid #f2f9ff;
-    padding-top: .75em;
+div#downloadslist ul li:first-child {
+    margin-top: .75em;
 }
 
-ul#downloadslist li:last-child {
-    border-bottom: 1px solid #cadceb;
-    padding-bottom: .75em;
-    margin-bottom: 0;
+div#downloadslist ul li:last-child {
+    margin-bottom: .75em;
 }
 
 section#gamedetails > * {

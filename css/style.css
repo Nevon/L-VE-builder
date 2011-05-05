@@ -709,11 +709,31 @@ figure.creator {
 }
 
 .iconbtn.cancel span {
-    background-image: url('../images/cancel.png');
+    background-image: url('../images/icons/32/cancel.png');
 }
-
 .iconbtn.build span {
-    background-image: url('../images/cog.png');
+    background-image: url('../images/icons/32/cog.png');
+}
+.iconbtn.add span {
+    background-image: url('../images/icons/32/add.png');
+}
+.iconbtn.accept span {
+    background-image: url('../images/icons/32/accept.png');
+}
+.iconbtn.delete span {
+    background-image: url('../images/icons/32/accept.png');
+}
+.iconbtn.first span {
+    background-image: url('../images/icons/32/first.png');
+}
+.iconbtn.last span {
+    background-image: url('../images/icons/32/last.png');
+}
+.iconbtn.next span {
+    background-image: url('../images/icons/32/next.png');
+}
+.iconbtn.previous span {
+    background-image: url('../images/icons/32/previous.png');
 }
 
 .btn.green {
